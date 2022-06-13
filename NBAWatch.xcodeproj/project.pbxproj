@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B1BA6552857BC47000F6585 /* NBAWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5B1BA6542857BC47000F6585 /* NBAWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5B1BA65A2857BC4B000F6585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B1BA6592857BC4B000F6585 /* Assets.xcassets */; };
+		5B1BA6602857BC4B000F6585 /* NBAWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5B1BA65F2857BC4B000F6585 /* NBAWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5B1BA6652857BC4B000F6585 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6642857BC4B000F6585 /* ContentView.swift */; };
+		5B1BA6672857BC4B000F6585 /* NBAWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6662857BC4B000F6585 /* NBAWatchApp.swift */; };
+		5B1BA6692857BC4B000F6585 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6682857BC4B000F6585 /* ComplicationController.swift */; };
+		5B1BA66B2857BC4D000F6585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B1BA66A2857BC4D000F6585 /* Assets.xcassets */; };
+		5B1BA66E2857BC4D000F6585 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B1BA66D2857BC4D000F6585 /* Preview Assets.xcassets */; };
+		5B1BA6822857BD17000F6585 /* DraftService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6812857BD17000F6585 /* DraftService.swift */; };
+		5B1BA6842857BD29000F6585 /* DraftRoundItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6832857BD29000F6585 /* DraftRoundItem.swift */; };
+		5B1BA6862857BD34000F6585 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6852857BD34000F6585 /* Data.swift */; };
+		5B1BA6882857BD3E000F6585 /* Pick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6872857BD3E000F6585 /* Pick.swift */; };
+		5B1BA68A2857BD4A000F6585 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6892857BD4A000F6585 /* Team.swift */; };
+		5B1BA68D2857BD6E000F6585 /* MockDraftPreviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA68C2857BD6E000F6585 /* MockDraftPreviewService.swift */; };
+		5B1BA6912857BD8F000F6585 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6902857BD8F000F6585 /* Prospect.swift */; };
+		5B1BA6932857BDA1000F6585 /* DraftRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6922857BDA1000F6585 /* DraftRound.swift */; };
+		5B1BA6952857BDAB000F6585 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6942857BDAB000F6585 /* Star.swift */; };
+		5B1BA6972857BE62000F6585 /* draft.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B1BA6962857BE61000F6585 /* draft.plist */; };
+		5B1BA6992857BED8000F6585 /* LengthFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6982857BED8000F6585 /* LengthFormatters.swift */; };
+		5B1BA69E2857BF4A000F6585 /* CardStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA69D2857BF4A000F6585 /* CardStackModifier.swift */; };
+		5B1BA6A02857BF8B000F6585 /* Measurement+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA69F2857BF8B000F6585 /* Measurement+Extensions.swift */; };
+		5B1BA6A22857BFB9000F6585 /* Palette+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6A12857BFB9000F6585 /* Palette+Color.swift */; };
+		5B1BA6A42857BFC7000F6585 /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6A32857BFC7000F6585 /* ScaledFont.swift */; };
+		5B1BA6A62857BFD9000F6585 /* CustomTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6A52857BFD9000F6585 /* CustomTextStyle.swift */; };
+		5B1BA6A82857C014000F6585 /* Font in Resources */ = {isa = PBXBuildFile; fileRef = 5B1BA6A72857C014000F6585 /* Font */; };
+		5B1BA6AB2857C0A1000F6585 /* DraftList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6AA2857C0A1000F6585 /* DraftList.swift */; };
+		5B1BA6AD2857C0E4000F6585 /* DraftPlayerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6AC2857C0E4000F6585 /* DraftPlayerDetailView.swift */; };
+		5B1BA6AF2857C139000F6585 /* DraftPlayerDetailStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6AE2857C139000F6585 /* DraftPlayerDetailStatsView.swift */; };
+		5B1BA6B12857C160000F6585 /* DraftRoundCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6B02857C160000F6585 /* DraftRoundCardView.swift */; };
+		5B1BA6B32857C18F000F6585 /* DraftRoundItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6B22857C18F000F6585 /* DraftRoundItemView.swift */; };
+		5B1BA6B52857C20D000F6585 /* DraftCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6B42857C20D000F6585 /* DraftCardView.swift */; };
+		5B1BA6B72857C243000F6585 /* DraftPlayerDetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6B62857C243000F6585 /* DraftPlayerDetailInfoView.swift */; };
+		5B1BA6B92857C26A000F6585 /* DraftPlayerDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6B82857C26A000F6585 /* DraftPlayerDetailHeaderView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B1BA6562857BC47000F6585 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B1BA64A2857BC47000F6585 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1BA6532857BC47000F6585;
+			remoteInfo = "NBAWatch WatchKit App";
+		};
+		5B1BA6612857BC4B000F6585 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B1BA64A2857BC47000F6585 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1BA65E2857BC4B000F6585;
+			remoteInfo = "NBAWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5B1BA6752857BC4D000F6585 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5B1BA6602857BC4B000F6585 /* NBAWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1BA6792857BC4D000F6585 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5B1BA6552857BC47000F6585 /* NBAWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5B1BA6502857BC47000F6585 /* NBAWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBAWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B1BA6542857BC47000F6585 /* NBAWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NBAWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B1BA6592857BC4B000F6585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B1BA65F2857BC4B000F6585 /* NBAWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NBAWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B1BA6642857BC4B000F6585 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5B1BA6662857BC4B000F6585 /* NBAWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAWatchApp.swift; sourceTree = "<group>"; };
+		5B1BA6682857BC4B000F6585 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		5B1BA66A2857BC4D000F6585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B1BA66D2857BC4D000F6585 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5B1BA66F2857BC4D000F6585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B1BA6812857BD17000F6585 /* DraftService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftService.swift; sourceTree = "<group>"; };
+		5B1BA6832857BD29000F6585 /* DraftRoundItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftRoundItem.swift; sourceTree = "<group>"; };
+		5B1BA6852857BD34000F6585 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		5B1BA6872857BD3E000F6585 /* Pick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pick.swift; sourceTree = "<group>"; };
+		5B1BA6892857BD4A000F6585 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		5B1BA68C2857BD6E000F6585 /* MockDraftPreviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDraftPreviewService.swift; sourceTree = "<group>"; };
+		5B1BA6902857BD8F000F6585 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
+		5B1BA6922857BDA1000F6585 /* DraftRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftRound.swift; sourceTree = "<group>"; };
+		5B1BA6942857BDAB000F6585 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		5B1BA6962857BE61000F6585 /* draft.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = draft.plist; sourceTree = "<group>"; };
+		5B1BA6982857BED8000F6585 /* LengthFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthFormatters.swift; sourceTree = "<group>"; };
+		5B1BA69D2857BF4A000F6585 /* CardStackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackModifier.swift; sourceTree = "<group>"; };
+		5B1BA69F2857BF8B000F6585 /* Measurement+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Measurement+Extensions.swift"; sourceTree = "<group>"; };
+		5B1BA6A12857BFB9000F6585 /* Palette+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Palette+Color.swift"; sourceTree = "<group>"; };
+		5B1BA6A32857BFC7000F6585 /* ScaledFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
+		5B1BA6A52857BFD9000F6585 /* CustomTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextStyle.swift; sourceTree = "<group>"; };
+		5B1BA6A72857C014000F6585 /* Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Font; sourceTree = "<group>"; };
+		5B1BA6AA2857C0A1000F6585 /* DraftList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftList.swift; sourceTree = "<group>"; };
+		5B1BA6AC2857C0E4000F6585 /* DraftPlayerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftPlayerDetailView.swift; sourceTree = "<group>"; };
+		5B1BA6AE2857C139000F6585 /* DraftPlayerDetailStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftPlayerDetailStatsView.swift; sourceTree = "<group>"; };
+		5B1BA6B02857C160000F6585 /* DraftRoundCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftRoundCardView.swift; sourceTree = "<group>"; };
+		5B1BA6B22857C18F000F6585 /* DraftRoundItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftRoundItemView.swift; sourceTree = "<group>"; };
+		5B1BA6B42857C20D000F6585 /* DraftCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftCardView.swift; sourceTree = "<group>"; };
+		5B1BA6B62857C243000F6585 /* DraftPlayerDetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftPlayerDetailInfoView.swift; sourceTree = "<group>"; };
+		5B1BA6B82857C26A000F6585 /* DraftPlayerDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftPlayerDetailHeaderView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B1BA65C2857BC4B000F6585 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B1BA6492857BC47000F6585 = {
+			isa = PBXGroup;
+			children = (
+				5B1BA6582857BC47000F6585 /* NBAWatch WatchKit App */,
+				5B1BA6632857BC4B000F6585 /* NBAWatch WatchKit Extension */,
+				5B1BA6512857BC47000F6585 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B1BA6512857BC47000F6585 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B1BA6502857BC47000F6585 /* NBAWatch.app */,
+				5B1BA6542857BC47000F6585 /* NBAWatch WatchKit App.app */,
+				5B1BA65F2857BC4B000F6585 /* NBAWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B1BA6582857BC47000F6585 /* NBAWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5B1BA6592857BC4B000F6585 /* Assets.xcassets */,
+			);
+			path = "NBAWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		5B1BA6632857BC4B000F6585 /* NBAWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5B1BA67D2857BC5B000F6585 /* Application */,
+				5B1BA67E2857BC66000F6585 /* Models */,
+				5B1BA66C2857BC4D000F6585 /* Preview Content */,
+				5B1BA67F2857BC6E000F6585 /* Utilities */,
+				5B1BA6802857BC7E000F6585 /* Views */,
+				5B1BA66F2857BC4D000F6585 /* Info.plist */,
+			);
+			path = "NBAWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5B1BA66C2857BC4D000F6585 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5B1BA66D2857BC4D000F6585 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5B1BA67D2857BC5B000F6585 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5B1BA6682857BC4B000F6585 /* ComplicationController.swift */,
+				5B1BA66A2857BC4D000F6585 /* Assets.xcassets */,
+				5B1BA6662857BC4B000F6585 /* NBAWatchApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5B1BA67E2857BC66000F6585 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B1BA6812857BD17000F6585 /* DraftService.swift */,
+				5B1BA6832857BD29000F6585 /* DraftRoundItem.swift */,
+				5B1BA6852857BD34000F6585 /* Data.swift */,
+				5B1BA6872857BD3E000F6585 /* Pick.swift */,
+				5B1BA6892857BD4A000F6585 /* Team.swift */,
+				5B1BA68C2857BD6E000F6585 /* MockDraftPreviewService.swift */,
+				5B1BA6962857BE61000F6585 /* draft.plist */,
+				5B1BA6902857BD8F000F6585 /* Prospect.swift */,
+				5B1BA6922857BDA1000F6585 /* DraftRound.swift */,
+				5B1BA6942857BDAB000F6585 /* Star.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B1BA67F2857BC6E000F6585 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5B1BA6982857BED8000F6585 /* LengthFormatters.swift */,
+				5B1BA69C2857BEFF000F6585 /* Modifiers */,
+				5B1BA69A2857BEDE000F6585 /* _theming */,
+				5B1BA69B2857BEF0000F6585 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5B1BA6802857BC7E000F6585 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B1BA6A92857C086000F6585 /* Supporting Views */,
+				5B1BA6642857BC4B000F6585 /* ContentView.swift */,
+				5B1BA6AA2857C0A1000F6585 /* DraftList.swift */,
+				5B1BA6AC2857C0E4000F6585 /* DraftPlayerDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B1BA69A2857BEDE000F6585 /* _theming */ = {
+			isa = PBXGroup;
+			children = (
+				5B1BA6A32857BFC7000F6585 /* ScaledFont.swift */,
+				5B1BA6A52857BFD9000F6585 /* CustomTextStyle.swift */,
+				5B1BA6A72857C014000F6585 /* Font */,
+				5B1BA6A12857BFB9000F6585 /* Palette+Color.swift */,
+			);
+			path = _theming;
+			sourceTree = "<group>";
+		};
+		5B1BA69B2857BEF0000F6585 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5B1BA69F2857BF8B000F6585 /* Measurement+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5B1BA69C2857BEFF000F6585 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				5B1BA69D2857BF4A000F6585 /* CardStackModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		5B1BA6A92857C086000F6585 /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B1BA6AE2857C139000F6585 /* DraftPlayerDetailStatsView.swift */,
+				5B1BA6B02857C160000F6585 /* DraftRoundCardView.swift */,
+				5B1BA6B22857C18F000F6585 /* DraftRoundItemView.swift */,
+				5B1BA6B42857C20D000F6585 /* DraftCardView.swift */,
+				5B1BA6B62857C243000F6585 /* DraftPlayerDetailInfoView.swift */,
+				5B1BA6B82857C26A000F6585 /* DraftPlayerDetailHeaderView.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B1BA64F2857BC47000F6585 /* NBAWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B1BA67A2857BC4D000F6585 /* Build configuration list for PBXNativeTarget "NBAWatch" */;
+			buildPhases = (
+				5B1BA64E2857BC47000F6585 /* Resources */,
+				5B1BA6792857BC4D000F6585 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B1BA6572857BC47000F6585 /* PBXTargetDependency */,
+			);
+			name = NBAWatch;
+			productName = NBAWatch;
+			productReference = 5B1BA6502857BC47000F6585 /* NBAWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		5B1BA6532857BC47000F6585 /* NBAWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B1BA6762857BC4D000F6585 /* Build configuration list for PBXNativeTarget "NBAWatch WatchKit App" */;
+			buildPhases = (
+				5B1BA6522857BC47000F6585 /* Resources */,
+				5B1BA6752857BC4D000F6585 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B1BA6622857BC4B000F6585 /* PBXTargetDependency */,
+			);
+			name = "NBAWatch WatchKit App";
+			productName = "NBAWatch WatchKit App";
+			productReference = 5B1BA6542857BC47000F6585 /* NBAWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5B1BA65E2857BC4B000F6585 /* NBAWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B1BA6722857BC4D000F6585 /* Build configuration list for PBXNativeTarget "NBAWatch WatchKit Extension" */;
+			buildPhases = (
+				5B1BA65B2857BC4B000F6585 /* Sources */,
+				5B1BA65C2857BC4B000F6585 /* Frameworks */,
+				5B1BA65D2857BC4B000F6585 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NBAWatch WatchKit Extension";
+			productName = "NBAWatch WatchKit Extension";
+			productReference = 5B1BA65F2857BC4B000F6585 /* NBAWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B1BA64A2857BC47000F6585 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					5B1BA64F2857BC47000F6585 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					5B1BA6532857BC47000F6585 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					5B1BA65E2857BC4B000F6585 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 5B1BA64D2857BC47000F6585 /* Build configuration list for PBXProject "NBAWatch" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B1BA6492857BC47000F6585;
+			productRefGroup = 5B1BA6512857BC47000F6585 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B1BA64F2857BC47000F6585 /* NBAWatch */,
+				5B1BA6532857BC47000F6585 /* NBAWatch WatchKit App */,
+				5B1BA65E2857BC4B000F6585 /* NBAWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B1BA64E2857BC47000F6585 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1BA6522857BC47000F6585 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1BA65A2857BC4B000F6585 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1BA65D2857BC4B000F6585 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1BA6972857BE62000F6585 /* draft.plist in Resources */,
+				5B1BA66E2857BC4D000F6585 /* Preview Assets.xcassets in Resources */,
+				5B1BA66B2857BC4D000F6585 /* Assets.xcassets in Resources */,
+				5B1BA6A82857C014000F6585 /* Font in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B1BA65B2857BC4B000F6585 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1BA6652857BC4B000F6585 /* ContentView.swift in Sources */,
+				5B1BA6A42857BFC7000F6585 /* ScaledFont.swift in Sources */,
+				5B1BA6AD2857C0E4000F6585 /* DraftPlayerDetailView.swift in Sources */,
+				5B1BA6912857BD8F000F6585 /* Prospect.swift in Sources */,
+				5B1BA6B32857C18F000F6585 /* DraftRoundItemView.swift in Sources */,
+				5B1BA6992857BED8000F6585 /* LengthFormatters.swift in Sources */,
+				5B1BA69E2857BF4A000F6585 /* CardStackModifier.swift in Sources */,
+				5B1BA6862857BD34000F6585 /* Data.swift in Sources */,
+				5B1BA6AF2857C139000F6585 /* DraftPlayerDetailStatsView.swift in Sources */,
+				5B1BA6952857BDAB000F6585 /* Star.swift in Sources */,
+				5B1BA6B12857C160000F6585 /* DraftRoundCardView.swift in Sources */,
+				5B1BA6672857BC4B000F6585 /* NBAWatchApp.swift in Sources */,
+				5B1BA6A22857BFB9000F6585 /* Palette+Color.swift in Sources */,
+				5B1BA6882857BD3E000F6585 /* Pick.swift in Sources */,
+				5B1BA68D2857BD6E000F6585 /* MockDraftPreviewService.swift in Sources */,
+				5B1BA68A2857BD4A000F6585 /* Team.swift in Sources */,
+				5B1BA6A02857BF8B000F6585 /* Measurement+Extensions.swift in Sources */,
+				5B1BA6B92857C26A000F6585 /* DraftPlayerDetailHeaderView.swift in Sources */,
+				5B1BA6B72857C243000F6585 /* DraftPlayerDetailInfoView.swift in Sources */,
+				5B1BA6932857BDA1000F6585 /* DraftRound.swift in Sources */,
+				5B1BA6AB2857C0A1000F6585 /* DraftList.swift in Sources */,
+				5B1BA6692857BC4B000F6585 /* ComplicationController.swift in Sources */,
+				5B1BA6B52857C20D000F6585 /* DraftCardView.swift in Sources */,
+				5B1BA6842857BD29000F6585 /* DraftRoundItem.swift in Sources */,
+				5B1BA6822857BD17000F6585 /* DraftService.swift in Sources */,
+				5B1BA6A62857BFD9000F6585 /* CustomTextStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B1BA6572857BC47000F6585 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1BA6532857BC47000F6585 /* NBAWatch WatchKit App */;
+			targetProxy = 5B1BA6562857BC47000F6585 /* PBXContainerItemProxy */;
+		};
+		5B1BA6622857BC4B000F6585 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1BA65E2857BC4B000F6585 /* NBAWatch WatchKit Extension */;
+			targetProxy = 5B1BA6612857BC4B000F6585 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5B1BA6702857BC4D000F6585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B1BA6712857BC4D000F6585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B1BA6732857BC4D000F6585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NBAWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = DAZW7UB9Z9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NBAWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "NBAWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Esteban.Calvete.NBAWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		5B1BA6742857BC4D000F6585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NBAWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = DAZW7UB9Z9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NBAWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "NBAWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Esteban.Calvete.NBAWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		5B1BA6772857BC4D000F6585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DAZW7UB9Z9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = NBAWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "NBAWatch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Esteban.Calvete.NBAWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		5B1BA6782857BC4D000F6585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DAZW7UB9Z9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = NBAWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "NBAWatch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Esteban.Calvete.NBAWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		5B1BA67B2857BC4D000F6585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DAZW7UB9Z9;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Esteban.Calvete.NBAWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5B1BA67C2857BC4D000F6585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DAZW7UB9Z9;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Esteban.Calvete.NBAWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B1BA64D2857BC47000F6585 /* Build configuration list for PBXProject "NBAWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B1BA6702857BC4D000F6585 /* Debug */,
+				5B1BA6712857BC4D000F6585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B1BA6722857BC4D000F6585 /* Build configuration list for PBXNativeTarget "NBAWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B1BA6732857BC4D000F6585 /* Debug */,
+				5B1BA6742857BC4D000F6585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B1BA6762857BC4D000F6585 /* Build configuration list for PBXNativeTarget "NBAWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B1BA6772857BC4D000F6585 /* Debug */,
+				5B1BA6782857BC4D000F6585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B1BA67A2857BC4D000F6585 /* Build configuration list for PBXNativeTarget "NBAWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B1BA67B2857BC4D000F6585 /* Debug */,
+				5B1BA67C2857BC4D000F6585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B1BA64A2857BC47000F6585 /* Project object */;
+}
