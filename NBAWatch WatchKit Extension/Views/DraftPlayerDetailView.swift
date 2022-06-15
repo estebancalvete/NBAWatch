@@ -12,8 +12,8 @@ struct DraftPlayerDetailView: View {
         ScrollView {
             VStack {
                 header
-                info
                 stats
+                info
             }
         }
     }

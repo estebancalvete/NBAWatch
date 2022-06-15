@@ -31,7 +31,6 @@
 		5B1BA6A22857BFB9000F6585 /* Palette+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6A12857BFB9000F6585 /* Palette+Color.swift */; };
 		5B1BA6A42857BFC7000F6585 /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6A32857BFC7000F6585 /* ScaledFont.swift */; };
 		5B1BA6A62857BFD9000F6585 /* CustomTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6A52857BFD9000F6585 /* CustomTextStyle.swift */; };
-		5B1BA6A82857C014000F6585 /* Font in Resources */ = {isa = PBXBuildFile; fileRef = 5B1BA6A72857C014000F6585 /* Font */; };
 		5B1BA6AB2857C0A1000F6585 /* DraftList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6AA2857C0A1000F6585 /* DraftList.swift */; };
 		5B1BA6AD2857C0E4000F6585 /* DraftPlayerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6AC2857C0E4000F6585 /* DraftPlayerDetailView.swift */; };
 		5B1BA6AF2857C139000F6585 /* DraftPlayerDetailStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6AE2857C139000F6585 /* DraftPlayerDetailStatsView.swift */; };
@@ -40,6 +39,12 @@
 		5B1BA6B52857C20D000F6585 /* DraftCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6B42857C20D000F6585 /* DraftCardView.swift */; };
 		5B1BA6B72857C243000F6585 /* DraftPlayerDetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6B62857C243000F6585 /* DraftPlayerDetailInfoView.swift */; };
 		5B1BA6B92857C26A000F6585 /* DraftPlayerDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6B82857C26A000F6585 /* DraftPlayerDetailHeaderView.swift */; };
+		5B2AE1282859E5ED005FC8C9 /* AvenirNextCondensed-DemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B2AE1222859E5EC005FC8C9 /* AvenirNextCondensed-DemiBold.ttf */; };
+		5B2AE1292859E5ED005FC8C9 /* AvenirNextCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B2AE1232859E5EC005FC8C9 /* AvenirNextCondensed-Bold.ttf */; };
+		5B2AE12A2859E5ED005FC8C9 /* AvenirNextCondensed-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B2AE1242859E5EC005FC8C9 /* AvenirNextCondensed-UltraLight.ttf */; };
+		5B2AE12B2859E5ED005FC8C9 /* AvenirNextCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B2AE1252859E5EC005FC8C9 /* AvenirNextCondensed-Medium.ttf */; };
+		5B2AE12C2859E5ED005FC8C9 /* AvenirNextCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B2AE1262859E5ED005FC8C9 /* AvenirNextCondensed-Regular.ttf */; };
+		5B2AE12D2859E5ED005FC8C9 /* AvenirNextCondensed-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B2AE1272859E5ED005FC8C9 /* AvenirNextCondensed-Heavy.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,7 +116,6 @@
 		5B1BA6A12857BFB9000F6585 /* Palette+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Palette+Color.swift"; sourceTree = "<group>"; };
 		5B1BA6A32857BFC7000F6585 /* ScaledFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
 		5B1BA6A52857BFD9000F6585 /* CustomTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextStyle.swift; sourceTree = "<group>"; };
-		5B1BA6A72857C014000F6585 /* Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Font; sourceTree = "<group>"; };
 		5B1BA6AA2857C0A1000F6585 /* DraftList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftList.swift; sourceTree = "<group>"; };
 		5B1BA6AC2857C0E4000F6585 /* DraftPlayerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftPlayerDetailView.swift; sourceTree = "<group>"; };
 		5B1BA6AE2857C139000F6585 /* DraftPlayerDetailStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftPlayerDetailStatsView.swift; sourceTree = "<group>"; };
@@ -120,6 +124,12 @@
 		5B1BA6B42857C20D000F6585 /* DraftCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftCardView.swift; sourceTree = "<group>"; };
 		5B1BA6B62857C243000F6585 /* DraftPlayerDetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftPlayerDetailInfoView.swift; sourceTree = "<group>"; };
 		5B1BA6B82857C26A000F6585 /* DraftPlayerDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftPlayerDetailHeaderView.swift; sourceTree = "<group>"; };
+		5B2AE1222859E5EC005FC8C9 /* AvenirNextCondensed-DemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-DemiBold.ttf"; sourceTree = "<group>"; };
+		5B2AE1232859E5EC005FC8C9 /* AvenirNextCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		5B2AE1242859E5EC005FC8C9 /* AvenirNextCondensed-UltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-UltraLight.ttf"; sourceTree = "<group>"; };
+		5B2AE1252859E5EC005FC8C9 /* AvenirNextCondensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-Medium.ttf"; sourceTree = "<group>"; };
+		5B2AE1262859E5ED005FC8C9 /* AvenirNextCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		5B2AE1272859E5ED005FC8C9 /* AvenirNextCondensed-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-Heavy.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,9 +243,9 @@
 		5B1BA69A2857BEDE000F6585 /* _theming */ = {
 			isa = PBXGroup;
 			children = (
+				5B2AE11F2859E551005FC8C9 /* Font */,
 				5B1BA6A32857BFC7000F6585 /* ScaledFont.swift */,
 				5B1BA6A52857BFD9000F6585 /* CustomTextStyle.swift */,
-				5B1BA6A72857C014000F6585 /* Font */,
 				5B1BA6A12857BFB9000F6585 /* Palette+Color.swift */,
 			);
 			path = _theming;
@@ -268,6 +278,19 @@
 				5B1BA6B82857C26A000F6585 /* DraftPlayerDetailHeaderView.swift */,
 			);
 			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		5B2AE11F2859E551005FC8C9 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				5B2AE1232859E5EC005FC8C9 /* AvenirNextCondensed-Bold.ttf */,
+				5B2AE1222859E5EC005FC8C9 /* AvenirNextCondensed-DemiBold.ttf */,
+				5B2AE1272859E5ED005FC8C9 /* AvenirNextCondensed-Heavy.ttf */,
+				5B2AE1252859E5EC005FC8C9 /* AvenirNextCondensed-Medium.ttf */,
+				5B2AE1262859E5ED005FC8C9 /* AvenirNextCondensed-Regular.ttf */,
+				5B2AE1242859E5EC005FC8C9 /* AvenirNextCondensed-UltraLight.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,10 +408,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B2AE1292859E5ED005FC8C9 /* AvenirNextCondensed-Bold.ttf in Resources */,
+				5B2AE12C2859E5ED005FC8C9 /* AvenirNextCondensed-Regular.ttf in Resources */,
+				5B2AE1282859E5ED005FC8C9 /* AvenirNextCondensed-DemiBold.ttf in Resources */,
+				5B2AE12D2859E5ED005FC8C9 /* AvenirNextCondensed-Heavy.ttf in Resources */,
+				5B2AE12B2859E5ED005FC8C9 /* AvenirNextCondensed-Medium.ttf in Resources */,
 				5B1BA6972857BE62000F6585 /* draft.plist in Resources */,
 				5B1BA66E2857BC4D000F6585 /* Preview Assets.xcassets in Resources */,
+				5B2AE12A2859E5ED005FC8C9 /* AvenirNextCondensed-UltraLight.ttf in Resources */,
 				5B1BA66B2857BC4D000F6585 /* Assets.xcassets in Resources */,
-				5B1BA6A82857C014000F6585 /* Font in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
