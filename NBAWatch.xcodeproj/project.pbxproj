@@ -270,12 +270,12 @@
 		5B1BA6A92857C086000F6585 /* Supporting Views */ = {
 			isa = PBXGroup;
 			children = (
-				5B1BA6AE2857C139000F6585 /* DraftPlayerDetailStatsView.swift */,
-				5B1BA6B02857C160000F6585 /* DraftRoundCardView.swift */,
 				5B1BA6B22857C18F000F6585 /* DraftRoundItemView.swift */,
+				5B1BA6B02857C160000F6585 /* DraftRoundCardView.swift */,
 				5B1BA6B42857C20D000F6585 /* DraftCardView.swift */,
-				5B1BA6B62857C243000F6585 /* DraftPlayerDetailInfoView.swift */,
 				5B1BA6B82857C26A000F6585 /* DraftPlayerDetailHeaderView.swift */,
+				5B1BA6AE2857C139000F6585 /* DraftPlayerDetailStatsView.swift */,
+				5B1BA6B62857C243000F6585 /* DraftPlayerDetailInfoView.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
