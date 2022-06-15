@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct DraftPlayerDetailInfoView: View {
+    let prospect: Prospect
+    
     var body: some View {
-        Group {
+        VStack {
             HStack {
                 VStack(alignment: .leading) {
                     Text("POSITION:")
                         .custom(font: .bold, size: 16)
-                    Text("PF")
+                    Text(prospect.position)
                         .custom(font: .ultralight, size: 16)
                 }
                 Spacer()
@@ -23,7 +25,7 @@ struct DraftPlayerDetailInfoView: View {
                 VStack(alignment: .leading) {
                     Text("SCHOOL:")
                         .custom(font: .bold, size: 16)
-                    Text("School").custom(font: .ultralight, size: 16)
+                    Text(prospect.school.uppercased()).custom(font: .ultralight, size: 16)
                 }
                 Spacer()
             }
@@ -31,7 +33,7 @@ struct DraftPlayerDetailInfoView: View {
                 VStack(alignment: .leading) {
                     Text("EXPERIENCE:")
                         .custom(font: .bold, size: 16)
-                    Text("2")
+                    Text(prospect.experience)
                         .custom(font: .ultralight, size: 16)
                 }
                 Spacer()
@@ -40,7 +42,7 @@ struct DraftPlayerDetailInfoView: View {
                 VStack(alignment: .leading) {
                     Text("BIRTHPLACE:")
                         .custom(font: .bold, size: 16)
-                    Text("Cleveland, OH")
+                    Text(prospect.birthPlace)
                         .custom(font: .ultralight, size: 16)
                 }
                 Spacer()
@@ -49,7 +51,7 @@ struct DraftPlayerDetailInfoView: View {
                 HStack(spacing: 5) {
                     Text("HT/WT:")
                         .custom(font: .bold, size: 16)
-                    Text("6'0/999")
+                    Text("\(prospect.height())/\(prospect.weight())")
                         .custom(font: .ultralight, size: 16)
                 }
                 Spacer()
@@ -58,7 +60,7 @@ struct DraftPlayerDetailInfoView: View {
                 VStack(alignment: .leading) {
                     Text("ANALYSIS:")
                         .custom(font: .bold, size: 16)
-                    Text("Analysis goes here")
+                    Text(prospect.analysis)
                         .lineLimit(nil)
                         .multilineTextAlignment(.leading)
                         .fixedSize(horizontal: false, vertical: true)
@@ -74,6 +76,12 @@ struct DraftPlayerDetailInfoView: View {
 
 struct DraftPlayerDetailInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        DraftPlayerDetailInfoView()
+        DraftPlayerDetailInfoView(prospect: prospect)
+    }
+}
+
+extension DraftPlayerDetailInfoView_Previews {
+    static var prospect: Prospect {
+        return MockDraftPreviewService.prospect
     }
 }

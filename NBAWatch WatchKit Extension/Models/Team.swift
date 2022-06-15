@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Team: Decodable, Identifiable  {
+    let id = UUID()
+    let name: String
+    let market: String
+}

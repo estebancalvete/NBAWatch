@@ -17,13 +17,13 @@
 		5B1BA66E2857BC4D000F6585 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B1BA66D2857BC4D000F6585 /* Preview Assets.xcassets */; };
 		5B1BA6822857BD17000F6585 /* DraftService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6812857BD17000F6585 /* DraftService.swift */; };
 		5B1BA6842857BD29000F6585 /* DraftRoundItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6832857BD29000F6585 /* DraftRoundItem.swift */; };
-		5B1BA6862857BD34000F6585 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6852857BD34000F6585 /* Data.swift */; };
+		5B1BA6862857BD34000F6585 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6852857BD34000F6585 /* DataManager.swift */; };
 		5B1BA6882857BD3E000F6585 /* Pick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6872857BD3E000F6585 /* Pick.swift */; };
 		5B1BA68A2857BD4A000F6585 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6892857BD4A000F6585 /* Team.swift */; };
 		5B1BA68D2857BD6E000F6585 /* MockDraftPreviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA68C2857BD6E000F6585 /* MockDraftPreviewService.swift */; };
 		5B1BA6912857BD8F000F6585 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6902857BD8F000F6585 /* Prospect.swift */; };
 		5B1BA6932857BDA1000F6585 /* DraftRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6922857BDA1000F6585 /* DraftRound.swift */; };
-		5B1BA6952857BDAB000F6585 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6942857BDAB000F6585 /* Star.swift */; };
+		5B1BA6952857BDAB000F6585 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6942857BDAB000F6585 /* Stat.swift */; };
 		5B1BA6972857BE62000F6585 /* draft.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B1BA6962857BE61000F6585 /* draft.plist */; };
 		5B1BA6992857BED8000F6585 /* LengthFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA6982857BED8000F6585 /* LengthFormatters.swift */; };
 		5B1BA69E2857BF4A000F6585 /* CardStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BA69D2857BF4A000F6585 /* CardStackModifier.swift */; };
@@ -102,13 +102,13 @@
 		5B1BA66F2857BC4D000F6585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B1BA6812857BD17000F6585 /* DraftService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftService.swift; sourceTree = "<group>"; };
 		5B1BA6832857BD29000F6585 /* DraftRoundItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftRoundItem.swift; sourceTree = "<group>"; };
-		5B1BA6852857BD34000F6585 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		5B1BA6852857BD34000F6585 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		5B1BA6872857BD3E000F6585 /* Pick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pick.swift; sourceTree = "<group>"; };
 		5B1BA6892857BD4A000F6585 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		5B1BA68C2857BD6E000F6585 /* MockDraftPreviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDraftPreviewService.swift; sourceTree = "<group>"; };
 		5B1BA6902857BD8F000F6585 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 		5B1BA6922857BDA1000F6585 /* DraftRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftRound.swift; sourceTree = "<group>"; };
-		5B1BA6942857BDAB000F6585 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		5B1BA6942857BDAB000F6585 /* Stat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
 		5B1BA6962857BE61000F6585 /* draft.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = draft.plist; sourceTree = "<group>"; };
 		5B1BA6982857BED8000F6585 /* LengthFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthFormatters.swift; sourceTree = "<group>"; };
 		5B1BA69D2857BF4A000F6585 /* CardStackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackModifier.swift; sourceTree = "<group>"; };
@@ -205,15 +205,15 @@
 			isa = PBXGroup;
 			children = (
 				5B1BA6812857BD17000F6585 /* DraftService.swift */,
-				5B1BA6832857BD29000F6585 /* DraftRoundItem.swift */,
-				5B1BA6852857BD34000F6585 /* Data.swift */,
-				5B1BA6872857BD3E000F6585 /* Pick.swift */,
-				5B1BA6892857BD4A000F6585 /* Team.swift */,
-				5B1BA68C2857BD6E000F6585 /* MockDraftPreviewService.swift */,
+				5B1BA6852857BD34000F6585 /* DataManager.swift */,
 				5B1BA6962857BE61000F6585 /* draft.plist */,
-				5B1BA6902857BD8F000F6585 /* Prospect.swift */,
 				5B1BA6922857BDA1000F6585 /* DraftRound.swift */,
-				5B1BA6942857BDAB000F6585 /* Star.swift */,
+				5B1BA6872857BD3E000F6585 /* Pick.swift */,
+				5B1BA6902857BD8F000F6585 /* Prospect.swift */,
+				5B1BA6892857BD4A000F6585 /* Team.swift */,
+				5B1BA6942857BDAB000F6585 /* Stat.swift */,
+				5B1BA6832857BD29000F6585 /* DraftRoundItem.swift */,
+				5B1BA68C2857BD6E000F6585 /* MockDraftPreviewService.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -434,9 +434,9 @@
 				5B1BA6B32857C18F000F6585 /* DraftRoundItemView.swift in Sources */,
 				5B1BA6992857BED8000F6585 /* LengthFormatters.swift in Sources */,
 				5B1BA69E2857BF4A000F6585 /* CardStackModifier.swift in Sources */,
-				5B1BA6862857BD34000F6585 /* Data.swift in Sources */,
+				5B1BA6862857BD34000F6585 /* DataManager.swift in Sources */,
 				5B1BA6AF2857C139000F6585 /* DraftPlayerDetailStatsView.swift in Sources */,
-				5B1BA6952857BDAB000F6585 /* Star.swift in Sources */,
+				5B1BA6952857BDAB000F6585 /* Stat.swift in Sources */,
 				5B1BA6B12857C160000F6585 /* DraftRoundCardView.swift in Sources */,
 				5B1BA6672857BC4B000F6585 /* NBAWatchApp.swift in Sources */,
 				5B1BA6A22857BFB9000F6585 /* Palette+Color.swift in Sources */,

@@ -8,16 +8,18 @@
 import SwiftUI
 
 struct DraftPlayerDetailStatsView: View {
+    let prospect: Prospect
+    
     var body: some View {
         HStack {
-            ForEach(0..<4) { _  in
+            ForEach(prospect.stats) { stat in
                 HStack {
                     Spacer(minLength: 4)
                     VStack {
-                        Text("PTS")
+                        Text(stat.name.uppercased())
                             .custom(font: .bold, size: 12)
                             .offset(y: 1)
-                        Text("99.9")
+                        Text(stat.value)
                             .custom(font: .ultralight, size: 18)
                     }
                     .background(Image("stat-bg-small"))
@@ -32,6 +34,12 @@ struct DraftPlayerDetailStatsView: View {
 
 struct DraftPlayerDetailStatsView_Previews: PreviewProvider {
     static var previews: some View {
-        DraftPlayerDetailStatsView()
+        DraftPlayerDetailStatsView(prospect: prospect)
+    }
+}
+
+extension DraftPlayerDetailStatsView_Previews {
+    static var prospect: Prospect {
+        return MockDraftPreviewService.prospect
     }
 }

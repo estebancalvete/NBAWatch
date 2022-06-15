@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct DraftPlayerDetailView: View {
+    let prospect: Prospect
+    
     var body: some View {
         ScrollView {
             VStack {
-                DraftPlayerDetailHeaderView()
-                DraftPlayerDetailStatsView()
-                DraftPlayerDetailInfoView()
+                DraftPlayerDetailHeaderView(prospect: prospect)
+                DraftPlayerDetailStatsView(prospect: prospect)
+                DraftPlayerDetailInfoView(prospect: prospect)
             }
         }
     }
@@ -21,6 +23,12 @@ struct DraftPlayerDetailView: View {
 
 struct DraftPlayerDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DraftPlayerDetailView()
+        DraftPlayerDetailView(prospect: prospect)
+    }
+}
+
+extension DraftPlayerDetailView_Previews {
+    static var prospect: Prospect {
+        return MockDraftPreviewService.prospect
     }
 }

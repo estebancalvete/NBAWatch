@@ -1,5 +1,5 @@
 //
-//  Pick.swift
+//  Stat.swift
 //  NBAWatch WatchKit Extension
 //
 //  Created by Esteban Calvete Iglesias on 13/6/22.
@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Pick: Decodable, Identifiable  {
+struct Stat: Decodable, Identifiable  {
     let id = UUID()
-    let prospect: Prospect
+    let value: String
+    let name: String
 }
